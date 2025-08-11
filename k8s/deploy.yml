@@ -1,0 +1,19 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: mydeploy
+spec:
+  replicas: 2
+  selector:
+    matchExpressions:
+      - { key: myname, operator: In, values: [sone, sonu, soonu] }
+  template:      
+    metadata:
+      labels:
+        myname: sonu  # This label must match one of the values in the selector
+    spec:
+      containers:
+        - name: c1
+          image: nginx
+          ports: 
+           - containerPort: 80
