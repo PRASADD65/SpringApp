@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nginx-reverse-proxy-config
+data:
+  nginx.conf: |
+    events {}
+    http {
+      server {
+        listen 80;
+
+        location /service-test/ {
+          proxy_pass http://service-test.default.svc.cluster.local:8080/;
+        }
+      }
+    }
