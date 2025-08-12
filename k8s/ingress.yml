@@ -12,6 +12,6 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: service-test
+            name: nginx-reverse-proxy
             port:
               number: 80
