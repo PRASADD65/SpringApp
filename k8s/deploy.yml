@@ -16,4 +16,4 @@ spec:
         - name: c1
           image: prasadd5/my-springboot-app-20250812-123746:v3
           ports: 
-           - containerPort: 80
+           - containerPort: 5000
