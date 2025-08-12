@@ -10,7 +10,7 @@ data:
         listen 80;
 
         location / {
-          proxy_pass http://service-test.default.svc.cluster.local:5000/;
+          proxy_pass http://service-test.default.svc.cluster.local:80/;
         }
       }
     }
