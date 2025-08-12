@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: c1
-          image: nginx
+          image: prasadd5/dockerlabonlinereg:myimage
           ports: 
            - containerPort: 80
