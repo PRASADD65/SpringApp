@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: c1
-          image: prasadd5/dockerlabonlinereg:myimage
+          image: prasadd5/my-springboot-app-20250812-122118:v2
           ports: 
            - containerPort: 80
