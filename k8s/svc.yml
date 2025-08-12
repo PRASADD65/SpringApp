@@ -6,6 +6,6 @@ spec:
   selector:
     myname: sonu  # Ensure this matches labels in your Pods/Deployment
   ports:
-    - port: 80
-      targetPort: 80
-  type: ClusterIP  # Fixed uppercase 'P'
+    - port: 5000
+      targetPort: 5000
+  type: ClusterIP  
