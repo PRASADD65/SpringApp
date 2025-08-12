@@ -4,13 +4,14 @@ metadata:
   name: nginx-reverse-proxy-config
 data:
   nginx.conf: |
-    events {}
+    events { }
+
     http {
       server {
         listen 80;
 
         location / {
-          proxy_pass http://service-test.default.svc.cluster.local:80/;
+          proxy_pass http://service-test:5000/;
         }
       }
     }
