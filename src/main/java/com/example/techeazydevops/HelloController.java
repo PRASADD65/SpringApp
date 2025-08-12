@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
     @GetMapping("/")
     public String hello() {
-        return "Hello, Welcome to Spring Boot Assignment 4! You are watching this from a private git repo. Thank you !";
+        return "Hello, Welcome to Spring Boot Application Deploy by ArgoCD! You are watching this from a private git repo. Thank you !";
     }
 }
